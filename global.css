@@ -1,3 +1,152 @@
+.wrapper-head {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 20px 10px;
+  border-bottom: 1px solid rgb(193, 193, 77);
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+.burger {
+  transition: width 0.8s ease;
+  position: absolute;
+  left: 7%;
+  width: 70px;
+  cursor: pointer;
+}
+
+.wrapper-logo {
+  display: flex;
+  align-items: center;
+}
+.wrapper-logo a {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  position: relative;
+  left: 250px;
+  text-decoration: none;
+  color: #b631ca;
+  font-size: 34px;
+  font-weight: 600;
+}
+.wrapper-logo i {
+  position: absolute;
+  left: 55%;
+  z-index: 50;
+  font-size: 65px;
+}
+
+.main {
+  display: flex;
+  height: 100%;
+}
+
+.left {
+  transition: width 0.5s ease;
+  position: relative;
+  background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  height: 100%;
+  padding: 25px 0 15px 25px;
+  width: 450px;
+}
+.left .close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 40px;
+  top: 0;
+  right: 0;
+  padding: 3px 3px;
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 40px;
+  cursor: pointer;
+}
+.left .list-of-categrory {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  gap: 20px;
+}
+.left .list-of-categrory .category-item {
+  display: flex;
+  padding: 15px 10px;
+  border: 1px solid transparent;
+  transition: box-shadow 0.5s ease, background-color 0.5s ease;
+}
+.left .list-of-categrory .category-item:hover {
+  box-shadow: 2px 2px 12px white;
+  background-color: rgba(81, 27, 148, 0.568627451);
+}
+.left .list-of-categrory .category-item:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 18px;
+  background-color: #30cfd0;
+}
+.left .list-of-categrory .category-item:last-child i {
+  font-size: 45px;
+  z-index: 80;
+}
+.left .list-of-categrory .category-item a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 28px;
+}
+
+.right {
+  width: 100%;
+  padding: 25px;
+}
+.right .list-items {
+  display: grid;
+  list-style: none;
+  grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
+  grid-auto-rows: 180px;
+  gap: 15px;
+}
+.right .list-items .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  text-align: center;
+  transition: transform 0.5s ease;
+}
+.right .list-items .item:hover {
+  transform: scale(1.1);
+}
+.right .list-items .item a {
+  text-decoration: none;
+  font-size: 30px;
+  color: rgba(73, 38, 167, 0.8588235294);
+  font-weight: 700;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table td,
+table th {
+  border: 1px solid #333;
+  padding: 10px;
+}
+table thead tr {
+  background-color: rgb(157, 138, 138);
+}
+table tbody tr:nth-child(odd) {
+  background-color: rgba(204, 204, 204, 0.4784313725);
+}
+table tbody tr:nth-child(odd) td:first-child {
+  text-align: center;
+}
+
 @font-face {
   font-family: "Titillium Web";
   src: url("./fonts/TitilliumWeb-Regular.woff2") format("woff2"), url("./fonts/TitilliumWeb-Regular.woff") format("woff");
@@ -30,13 +179,29 @@ html {
   scroll-behavior: smooth;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   display: flex;
   height: 100%;
+  width: 100%;
   flex-direction: column;
   font-family: "Titillium", "Arial", sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 1.2;
-  background: linear-gradient(90deg, #606c88 0%, #3f4c6b 100%);
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
 }/*# sourceMappingURL=global.css.map */

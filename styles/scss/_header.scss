@@ -1,0 +1,38 @@
+.wrapper-head {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 20px 10px;
+    border-bottom: 1px solid rgb(193, 193, 77);
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.burger {
+    transition: width 0.8s ease;
+    position: absolute;
+    left: 7%;
+    width: 70px;
+    cursor: pointer;
+}
+.wrapper-logo {
+    display: flex;
+    align-items: center;
+    a {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        position: relative;
+        left: 250px;
+        text-decoration: none;
+        color: #b631ca;
+        font-size: 34px;
+        font-weight: 600;
+    }
+    i {
+        position: absolute;
+        left: 55%;
+        z-index: 50;
+        font-size: 65px;
+    }
+}

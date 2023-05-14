@@ -1,3 +1,7 @@
+@import "./styles/utils/variables";
+@import "./styles/scss/header";
+@import "./styles/scss/hero";
+@import "./styles/scss/teacher";
 @font-face {
     font-family: "Titillium Web";
     src: url("./fonts/TitilliumWeb-Regular.woff2") format("woff2"),
@@ -36,13 +40,28 @@ html {
     scroll-behavior: smooth;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 body {
     display: flex;
     height: 100%;
+    width: 100%;
     flex-direction: column;
     font-family: "Titillium", "Arial", sans-serif;
     font-size: 22px;
     font-weight: 400;
     line-height: 1.2;
-    background: linear-gradient(90deg, #606c88 0%, #3f4c6b 100%);
+    background: $bodyColorDark;
+    color: $colorLight;
 }

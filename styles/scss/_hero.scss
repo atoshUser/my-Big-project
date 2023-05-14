@@ -1,0 +1,95 @@
+.main {
+    display: flex;
+    height: 100%;
+}
+
+.left {
+    transition: width 0.5s ease;
+    position: relative;
+    background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    height: 100%;
+    padding: 25px 0 15px 25px;
+    width: 450px;
+    .close {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 40px;
+        top: 0;
+        right: 0;
+        padding: 3px 3px;
+        border: 1px solid white;
+        border-radius: 50%;
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+    .list-of-categrory {
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        gap: 20px;
+
+        .category-item {
+            display: flex;
+            padding: 15px 10px;
+            border: 1px solid transparent;
+            transition: box-shadow 0.5s ease, background-color 0.5s ease;
+            &:hover {
+                box-shadow: 2px 2px 12px white;
+                background-color: #511b9491;
+            }
+
+            &:last-child {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+                border-radius: 18px;
+                background-color: #30cfd0;
+                i {
+                    font-size: 45px;
+                    z-index: 80;
+                }
+            }
+            a {
+                text-decoration: none;
+                color: $colorLight;
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+//  RIGHT ASIDE STYLES
+
+.right {
+    width: 100%;
+    padding: 25px;
+
+    .list-items {
+        display: grid;
+        list-style: none;
+        grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
+        grid-auto-rows: 180px;
+        gap: 15px;
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $colorLight;
+            text-align: center;
+            transition: transform 0.5s ease;
+            &:hover {
+                transform: scale(1.1);
+            }
+            a {
+                text-decoration: none;
+                font-size: 30px;
+                color: $colorDark;
+                font-weight: 700;
+            }
+        }
+    }
+}
