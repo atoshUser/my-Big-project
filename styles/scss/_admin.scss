@@ -1,0 +1,78 @@
+.form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+
+    .main-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 35px;
+        width: 100%;
+
+        h3 {
+            font-weight: 600;
+            font-size: 38px;
+            color: orangered;
+        }
+        #addBtn {
+            padding: 10px;
+            border-radius: 18px;
+            border: 1px solid white;
+            background-color: rgb(112, 201, 112);
+            color: white;
+            transition: border 0.5s ease, background-color 0.5s ease,
+                color 0.5s ease;
+            &:hover {
+                border: 1px solid rgb(87, 220, 87);
+                background-color: white;
+                color: rgb(83, 193, 83);
+            }
+        }
+        div {
+            display: flex;
+            gap: 35px;
+            position: relative;
+            input {
+                padding: 10px;
+            }
+
+            .text-label {
+                position: absolute;
+                top: -58%;
+            }
+
+            .surname {
+                position: absolute;
+                right: 19%;
+                top: -58%;
+            }
+
+            .phone {
+                position: absolute;
+                top: -58%;
+            }
+
+            .addres {
+                position: absolute;
+                top: -58%;
+                left: 34%;
+                font-size: 18px;
+            }
+            .wrapper-label {
+                display: flex;
+                flex-direction: column;
+                font-size: 18px;
+                position: relative;
+                width: 300px;
+                label {
+                    position: absolute;
+                    top: -50%;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

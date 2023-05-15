@@ -52,7 +52,63 @@
                     </li>
                 </ul>
             </aside>
+            <form class="form">
+                <div class="main-wrapper">
+                    <h3>Yangi o'qituvchi qo'shish bo'limi</h3>
+                    <div class="first-box">
+                        <p class="text-label visually-hidden">
+                            Ismni kiriting:
+                        </p>
+                        <input
+                            class="input"
+                            id="name"
+                            type="text"
+                            placeholder="Ismni kiriting"
+                            required
+                        />
+                        <p class="surname visually-hidden">
+                            Familiyani kiriting:
+                        </p>
+                        <input
+                            class="input"
+                            type="text"
+                            id="surname"
+                            placeholder="Familiyasini kiriting"
+                            required
+                        />
+                    </div>
+                    <div class="second-box">
+                        <p class="phone visually-hidden">
+                            Telefon raqamni kiriting:
+                        </p>
+                        <input
+                            class="input"
+                            id="phone_number"
+                            type="text"
+                            placeholder="Telefon raqamini kiriting"
+                            required
+                        />
+                        <p class="addres visually-hidden">
+                            Yashash manzilni kiriting kiriting:
+                        </p>
+                        <input
+                            class="input"
+                            type="text"
+                            id="addres"
+                            placeholder="Yashash manzilini kiriting"
+                            required
+                        />
+
+                        <span class="wrapper-label">
+                            <label for="date">Tug'ilgan yilni kiriting</label>
+                            <input class="date-input" type="date" id="date" />
+                        </span>
+                    </div>
+                    <button type="button" id="addBtn">Add new User</button>
+                </div>
+            </form>
         </section>
         <script src="/app.js"></script>
+        <script src="/js/admin.js"></script>
     </body>
 </html>
